@@ -1,0 +1,23 @@
+{{> above}}
+<script>
+    function setURL(selector, url) {
+        $(selector).val(url);
+    }
+</script>
+
+<p>
+    Split {{metadata.originalname}} ({{metadata.size}} bytes) contains {{ svgimages.length }} separate images.
+</p>
+<p>
+    {{#each svgimages as |svgimage| }}
+        <div>
+            <img alt="{{svgimage.name}}" filename=="{{svgimage.name}}" src="data:image/svg+xml;base64,{{svgimage.base64}}" style="max-width:24pt; max-height: 24pt;margin:10pt;" title="{{svgimage.name}}"/>  {{svgimage.name}} ({{svgimage.text.length}} bytes)
+        </div>
+    {{/each}}
+
+</p>
+
+<p><a href="index.html" class="button button-secondary">Try another</a></p>
+<!--
+-->
+{{> below}}

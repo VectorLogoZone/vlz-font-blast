@@ -1,0 +1,31 @@
+{{> above}}
+<p>
+    Split a font into separate .SVG files
+</p>
+{{# if msgtype }}{{# if msgtext }}
+    <div class="alert alert-{{msgtype}}">{{msgtext}}</div>
+{{/if}}{{/if}}
+<p>
+<form id="metaform" method="post" action="/" enctype="multipart/form-data">
+    <fieldset>
+        <legend>
+            Font
+        </legend>
+        <div class="input-field">
+            <label>Font file (.SVG or .TTF)</label>
+            <div class="input-group">
+                <span class="file-button">
+                    <input type="file" id="fileUpload" name="file" /> <label class="button" for="fileUpload">Select File</label>
+                </span>
+                <input type="text" id="fileName" readonly="readonly"/>
+            </div>
+        </div>
+
+        <div class="input-field">
+            <button class="button">Upload &amp; Split</button>
+        </div>
+
+    </fieldset>
+</form>
+</p>
+{{> below}}
