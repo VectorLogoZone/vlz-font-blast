@@ -1,0 +1,7 @@
+#
+# robots.txt for fontblast.vectorlogo.zone
+#
+
+
+User-agent: *
+Allow: /
