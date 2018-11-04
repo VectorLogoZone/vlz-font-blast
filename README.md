@@ -1,6 +1,4 @@
-<img alt="VectorLogoZone Logo" src="https://fontblast.vectorlogo.zone/favicon.svg" height="96" >
-
-# VLZ Font Blast
+# VLZ Font Blast [<img alt="VectorLogoZone Logo" src="https://fontblast.vectorlogo.zone/favicon.svg" height="90" align="right" />](https://fontblast.vectorlogo.zone/)
 
 [VLZ Font Blast](https://fontblast.vectorlogo.zone/) is a simple web wrapper around the [font-blast](https://github.com/eugene1g/font-blast) package.
 
@@ -20,6 +18,7 @@ See the [to do list](TODO.md) for a list of things that are planned.
 
 ## Credits
 
+[![Cloudflare](https://www.vectorlogo.zone/logos/cloudflare/cloudflare-ar21.svg)](https://www.cloudflare.com/ "CDN")
 [![express.js](https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg)](https://expressjs.com/ "Web Framework")
 [![Git](https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg)](https://git-scm.com/ "Version control")
 [![Github](https://www.vectorlogo.zone/logos/github/github-ar21.svg)](https://github.com/ "Code hosting")
@@ -31,6 +30,6 @@ See the [to do list](TODO.md) for a list of things that are planned.
 [![Shoelace CSS](https://www.vectorlogo.zone/logos/shoelacestyle/shoelacestyle-ar21.svg)](https://shoelace.style/ "CSS")
 [![Zeit](https://www.vectorlogo.zone/logos/zeit/zeit-ar21.svg)](https://www.zeit.co/ "Hosting")
 
- * font-blast
+ * [font-blast](https://github.com/eugene1g/font-blast)
 
 

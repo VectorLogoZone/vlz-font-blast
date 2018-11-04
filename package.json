@@ -2,8 +2,8 @@
     "name": "vlz-font-blast",
     "version": "0.0.1",
     "description": "Split a font into individual SVG files",
-    "license": "AGPL-1.0",
-    "real-license": "AGPL-1.0-or-later",
+    "license": "AGPL-3.0",
+    "license-actual": "AGPL-3.0-or-later",
     "main": "server.js",
     "scripts": {
         "start": "node server.js"

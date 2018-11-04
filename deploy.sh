@@ -1,4 +1,11 @@
 #!/bin/bash
+#
+# deploy to zeit
+#
+
+#set -o errexit
+set -o pipefail
+set -o nounset
 
 LASTMOD=$(date -u +%Y-%m-%dT%H:%M:%SZ)
 grep -q "^LASTMOD=" .env
@@ -16,11 +23,4 @@ else
 	sed -i -e "s/^COMMIT=.*$/COMMIT=$COMMIT/g" .env
 fi
 
-TOKEN=$(cat ~/.now/auth.json | jq ".credentials[0].token" --raw-output)
-NAME=$(cat ./now.json | jq '.name' --raw-output)
-OLD_DEPLOY=$(curl "https://api.zeit.co/v2/now/deployments" --silent --show-error --header "Authorization: Bearer $TOKEN" | jq ".deployments[] | select(.name | contains(\"$NAME\")) | .url" --raw-output)
-
-
-now --public --dotenv  && now alias
-
-now rm $OLD_DEPLOY
+now --dotenv && now alias && now rm $(cat ./now.json | jq '.name' --raw-output) --safe --yes
