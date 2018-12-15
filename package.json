@@ -21,7 +21,7 @@
         "ttf2svg": "^1.2.0"
     },
     "engines": {
-        "node": "8.11.2"
+        "node": "8.14.0"
     },
     "repository": {
         "url": "https://www.github.com/vectorlogozone/vlz-font-blast"
