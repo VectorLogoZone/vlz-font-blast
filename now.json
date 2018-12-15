@@ -1,4 +1,7 @@
 {
-	"name": "vlz-font-blast",
-	"alias": "fontblast.vectorlogo.zone"
+  "alias": "fontblast.vectorlogo.zone",
+  "env": {
+    "GA_ID": "UA-328425-25"
+  },
+  "name": "vlz-font-blast"
 }
