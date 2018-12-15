@@ -1,0 +1,10 @@
+dist/*
+.env
+.editorconfig
+.git/*
+.gitignore
+node_modules/*
+nodemon.json
+now.json
+*.sh
+*.md

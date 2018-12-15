@@ -6,3 +6,5 @@
  - [ ] dates in tmp directory names
  - [ ] google analytics
  - [ ] upload?
+ - [ ] switch to TypeScript, Koa
+ - [ ] logging with Pino

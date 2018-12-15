@@ -3,5 +3,10 @@
   "env": {
     "GA_ID": "UA-328425-25"
   },
-  "name": "vlz-font-blast"
+  "features": {
+    "cloud": "v2"
+  },
+  "name": "vlz-font-blast",
+  "type": "docker",
+  "version": 1
 }
