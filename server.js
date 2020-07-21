@@ -6,7 +6,6 @@ const express = require('express');
 const fontBlast = require('font-blast');
 const fs = require('fs');
 const hbs = require('hbs');
-const minio = require('minio');
 const multer  = require('multer');
 const os = require('os');
 const path = require('path');
@@ -35,13 +34,6 @@ hbs.registerPartial("below", fs.readFileSync("./partials/below.hbs", "utf-8"));
 hbs.registerHelper('isUrl', function(url, options) { return this.url == url || this.url.startsWith(url + "?") ? options.fn(this) : '';});
 hbs.registerHelper('isParam', function(param, value, options) { return options.data.root[param] == value ? options.fn(this) : options.inverse(this);});
 hbs.registerHelper('toJSON', function(object){ return JSON.stringify(object);});  //NOTE: use new hbs.SafeString() if you need to avoid HTML encoding
-
-const minioClient = new minio.Client({
-  endPoint: 's3.amazonaws.com',
-  secure: true,
-  accessKey: process.env.S3_ACCESS_KEY,
-  secretKey: process.env.S3_SECRET_KEY
-});
 
 function getStatus() {
 	const retVal = {};

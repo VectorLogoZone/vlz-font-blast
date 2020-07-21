@@ -1,35 +1,35 @@
 {
-    "name": "vlz-font-blast",
-    "version": "0.0.1",
-    "description": "Split a font into individual SVG files",
-    "license": "AGPL-3.0",
-    "license-actual": "AGPL-3.0-or-later",
-    "main": "server.js",
-    "scripts": {
-        "start": "node server.js"
-    },
-    "dependencies": {
-        "body-parser": "^1.18.2",
-        "express": "^4.16.4",
-        "font-blast": "^0.7.0",
-        "hbs": "^4.0.1",
-        "minio": "^6.0.0",
-        "multer": "^1.4.1",
-        "request": "^2.82.0",
-        "request-promise-native": "^1.0.5",
-        "tmp": "0.0.33",
-        "ttf2svg": "^1.2.0"
-    },
-    "engines": {
-        "node": "8.14.0"
-    },
-    "repository": {
-        "url": "https://www.github.com/vectorlogozone/vlz-font-blast"
-    },
-    "keywords": [
-        "svg",
-        "ttf",
-        "ttf2svg",
-        "font-blast"
-    ]
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.4",
+    "font-blast": "^0.7.0",
+    "hbs": "^4.0.1",
+    "minio": "^6.0.0",
+    "multer": "^1.4.1",
+    "request": "^2.82.0",
+    "request-promise-native": "^1.0.5",
+    "tmp": "0.2.1",
+    "ttf2svg": "^1.2.0"
+  },
+  "description": "Split a font into individual SVG files",
+  "keywords": [
+    "svg",
+    "ttf",
+    "ttf2svg",
+    "font-blast"
+  ],
+  "license": "AGPL-3.0",
+  "license-actual": "AGPL-3.0-or-later",
+  "main": "server.js",
+  "name": "vlz-font-blast",
+  "repository": {
+    "url": "https://www.github.com/vectorlogozone/vlz-font-blast"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "version": "0.0.1",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }

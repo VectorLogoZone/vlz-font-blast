@@ -1,7 +1,14 @@
 #!/bin/bash
 #
-# run locally
+# run locally for dev
 #
 
-export $(grep ^[^\#] .env)
-nodemon server.js
+set -o errexit
+set -o pipefail
+set -o nounset
+
+export $(cat .env)
+
+#
+# run in watch mode
+npx nodemon
