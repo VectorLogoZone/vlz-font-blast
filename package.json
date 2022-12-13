@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "body-parser": "^1.18.2",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "font-blast": "^0.7.0",
     "hbs": "^4.0.1",
     "minio": "^6.0.0",
